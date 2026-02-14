@@ -1,0 +1,34 @@
+GET http://localhost:8080/posts
+
+###
+
+POST http://localhost:8080/posts
+Content-Type: application/json
+
+{
+  "title": "My First Blog",
+  "content": "Spring Boot API working",
+  "author": "Paridhi"
+}
+
+###
+
+GET http://localhost:8080/posts
+###
+
+###
+
+PUT http://localhost:8080/posts/1
+Content-Type: application/json
+
+{
+  "title": "Updated Blog",
+  "content": "Updated Content",
+  "author": "Paridhi"
+}
+
+###
+DELETE http://localhost:8080/posts/1
+
+###
+GET http://localhost:8080/posts
